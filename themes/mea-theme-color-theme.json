@@ -1,24 +1,360 @@
 {
-	"name": "My Custom Theme",
-	"type": "dark",
+	"name": "mea-theme",
 	"colors": {
-		"editor.background": "#1E1E1E",
-		"editor.foreground": "#D4D4D4",
-		"editorCursor.foreground": "#FFFFFF",
-		"activityBar.background": "#333333",
-		"sideBar.background": "#252526"
+		"editor.background": "#1A1A3B", // Darker indigo background for the editor
+		"editor.foreground": "#EEFFFF", // Light foreground for text
+		"activityBar.background": "#1A1A3B", // Darker background for activity bar
+		"activityBar.foreground": "#EEFFFF", // Foreground color for activity bar items
+		"activityBarBadge.background": "#007ACC", // Background for activity bar badges
+		"sideBar.background": "#1A1A3B", // Darker background for the sidebar
+		"sideBar.foreground": "#EEFFFF", // Foreground color for sidebar items
+		"sideBarTitle.foreground": "#BBBBBB", // Foreground color for sidebar title
+		"statusBar.background": "#1A1A3B", // Darker background for status bar
+		"statusBar.foreground": "#EEFFFF", // Foreground color for status bar items
+		"titleBar.activeBackground": "#1A1A3B", // Darker background for active title bar
+		"titleBar.activeForeground": "#EEFFFF", // Foreground color for active title bar items
+		"titleBar.inactiveBackground": "#1A1A3B", // Darker background for inactive title bar
+		"titleBar.inactiveForeground": "#BBBBBB", // Foreground color for inactive title bar items
+		"list.activeSelectionBackground": "#1A1A3B", // Dark indigo background for selected file names
+		"list.activeSelectionForeground": "#EEFFFF", // Light foreground for selected file names
+		"list.inactiveSelectionBackground": "#2D2A55", // Background for inactive selected file names
+		"list.inactiveSelectionForeground": "#EEFFFF", // Foreground for inactive selected file names
+		"editor.lineHighlightBackground": "#1A1A3B", // Dark indigo for line highlight
+		"editor.selectionBackground": "#2D2A55" // Background for selected text in editor
 	},
 	"tokenColors": [
 		{
-			"scope": "comment",
+			"name": "Comment",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
 			"settings": {
-				"foreground": "#6A9955"
+				"fontStyle": "italic", // Italicized comments
+				"foreground": "#546E7A"
 			}
 		},
 		{
-			"scope": "keyword",
+			"name": "Variables",
+			"scope": [
+				"variable",
+				"string constant.other.placeholder"
+			],
 			"settings": {
-				"foreground": "#C586C0"
+				"foreground": "#EEFFFF"
+			}
+		},
+		{
+			"name": "Colors",
+			"scope": [
+				"constant.other.color"
+			],
+			"settings": {
+				"foreground": "#FFFFFF"
+			}
+		},
+		{
+			"name": "Invalid",
+			"scope": [
+				"invalid",
+				"invalid.illegal"
+			],
+			"settings": {
+				"foreground": "#FF5370"
+			}
+		},
+		{
+			"name": "Keyword, Storage",
+			"scope": [
+				"keyword",
+				"storage.type",
+				"storage.modifier"
+			],
+			"settings": {
+				"foreground": "#C792EA"
+			}
+		},
+		{
+			"name": "Operator, Misc",
+			"scope": [
+				"keyword.control",
+				"constant.other.color",
+				"punctuation",
+				"meta.tag",
+				"punctuation.definition.tag",
+				"punctuation.separator.inheritance.php",
+				"punctuation.definition.tag.html",
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html",
+				"punctuation.section.embedded",
+				"keyword.other.template",
+				"keyword.other.substitution"
+			],
+			"settings": {
+				"foreground": "#89DDFF"
+			}
+		},
+		{
+			"name": "Tag",
+			"scope": [
+				"entity.name.tag",
+				"meta.tag.sgml",
+				"markup.deleted.git_gutter"
+			],
+			"settings": {
+				"foreground": "#F07178"
+			}
+		},
+		{
+			"name": "Function, Special Method",
+			"scope": [
+				"entity.name.function",
+				"meta.function-call",
+				"variable.function",
+				"support.function",
+				"keyword.other.special-method"
+			],
+			"settings": {
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "Block Level Variables",
+			"scope": [
+				"meta.block variable.other"
+			],
+			"settings": {
+				"foreground": "#F07178"
+			}
+		},
+		{
+			"name": "Other Variable, String Link",
+			"scope": [
+				"support.other.variable",
+				"string.other.link"
+			],
+			"settings": {
+				"foreground": "#F07178"
+			}
+		},
+		{
+			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+			"scope": [
+				"constant.numeric",
+				"constant.language",
+				"support.constant",
+				"constant.character",
+				"constant.escape",
+				"variable.parameter",
+				"keyword.other.unit",
+				"keyword.other"
+			],
+			"settings": {
+				"foreground": "#effc3e"
+			}
+		},
+		{
+			"name": "String, Symbols, Inherited Class, Markup Heading",
+			"scope": [
+				"string",
+				"constant.other.symbol",
+				"constant.other.key",
+				"entity.other.inherited-class",
+				"markup.heading",
+				"markup.inserted.git_gutter",
+				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+			],
+			"settings": {
+				"foreground": "#C3E88D" // Closer to lime color
+			}
+		},
+		{
+			"name": "Class, Support",
+			"scope": [
+				"entity.name",
+				"support.type",
+				"support.class",
+				"support.other.namespace.use.php",
+				"meta.use.php",
+				"support.other.namespace.php",
+				"markup.changed.git_gutter",
+				"support.type.sys-types"
+			],
+			"settings": {
+				"foreground": "#FFCB6B"
+			}
+		},
+		{
+			"name": "Entity Types",
+			"scope": [
+				"support.type"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "CSS Class and Support",
+			"scope": [
+				"source.css support.type.property-name",
+				"source.sass support.type.property-name",
+				"source.scss support.type.property-name",
+				"source.less support.type.property-name",
+				"source.stylus support.type.property-name",
+				"source.postcss support.type.property-name"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "Sub-methods",
+			"scope": [
+				"entity.name.module.js",
+				"variable.import.parameter.js",
+				"variable.other.class.js"
+			],
+			"settings": {
+				"foreground": "#FF5370"
+			}
+		},
+		{
+			"name": "Language methods",
+			"scope": [
+				"variable.language"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#FF5370"
+			}
+		},
+		{
+			"name": "entity.name.method.js",
+			"scope": [
+				"entity.name.method.js"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "meta.method.js",
+			"scope": [
+				"meta.class-method.js entity.name.function.js",
+				"variable.function.constructor"
+			],
+			"settings": {
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "Attributes",
+			"scope": [
+				"entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#C792EA"
+			}
+		},
+		{
+			"name": "HTML Attributes",
+			"scope": [
+				"text.html.basic entity.other.attribute-name.html",
+				"text.html.basic entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#effc3e"
+			}
+		},
+		{
+			"name": "CSS Classes",
+			"scope": [
+				"entity.other.attribute-name.class"
+			],
+			"settings": {
+				"foreground": "#FFCB6B"
+			}
+		},
+		{
+			"name": "CSS ID's",
+			"scope": [
+				"source.sass keyword.control"
+			],
+			"settings": {
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "Inserted",
+			"scope": [
+				"markup.inserted"
+			],
+			"settings": {
+				"foreground": "#C3E88D"
+			}
+		},
+		{
+			"name": "Deleted",
+			"scope": [
+				"markup.deleted"
+			],
+			"settings": {
+				"foreground": "#FF5370"
+			}
+		},
+		{
+			"name": "Changed",
+			"scope": [
+				"markup.changed"
+			],
+			"settings": {
+				"foreground": "#C792EA"
+			}
+		},
+		{
+			"name": "Regular Expressions",
+			"scope": [
+				"string.regexp"
+			],
+			"settings": {
+				"foreground": "#89DDFF"
+			}
+		},
+		{
+			"name": "Escape Characters",
+			"scope": [
+				"constant.character.escape"
+			],
+			"settings": {
+				"foreground": "#effc3e"
+			}
+		},
+		{
+			"name": "JSON Key",
+			"scope": [
+				"source.json meta.structure.dictionary.json"
+			],
+			"settings": {
+				"foreground": "#effc3e"
+			}
+		},
+		{
+			"name": "JSON Value",
+			"scope": [
+				"source.json meta.structure.dictionary.value.json"
+			],
+			"settings": {
+				"foreground": "#EEFFFF"
+			}
+		},
+		{
+			"name": "HTML Tag Attribute",
+			"scope": [
+				"text.html.basic entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#effc3e"
 			}
 		}
 	]
