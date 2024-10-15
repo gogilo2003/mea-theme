@@ -150,7 +150,25 @@
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#effc3e"
+				"foreground": "#F78C6C"
+			}
+		},
+		{
+			"name": "JSON Key",
+			"scope": [
+				"meta.structure.dictionary.json meta.structure.dictionary.key.json"
+			],
+			"settings": {
+				"foreground": "#FF7F7F" // Pink for JSON keys
+			}
+		},
+		{
+			"name": "JSON Value",
+			"scope": [
+				"meta.structure.dictionary.json meta.structure.dictionary.value.json"
+			],
+			"settings": {
+				"foreground": "#78FF78" // Green for JSON values
 			}
 		},
 		{
@@ -264,7 +282,7 @@
 				"text.html.basic entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#effc3e"
+				"foreground": "#F78C6C"
 			}
 		},
 		{
@@ -295,39 +313,12 @@
 			}
 		},
 		{
-			"name": "Deleted",
-			"scope": [
-				"markup.deleted"
-			],
-			"settings": {
-				"foreground": "#FF5370"
-			}
-		},
-		{
-			"name": "Changed",
-			"scope": [
-				"markup.changed"
-			],
-			"settings": {
-				"foreground": "#C792EA"
-			}
-		},
-		{
-			"name": "Regular Expressions",
-			"scope": [
-				"string.regexp"
-			],
-			"settings": {
-				"foreground": "#89DDFF"
-			}
-		},
-		{
 			"name": "Escape Characters",
 			"scope": [
 				"constant.character.escape"
 			],
 			"settings": {
-				"foreground": "#effc3e"
+				"foreground": "#F78C6C"
 			}
 		},
 		{
@@ -336,7 +327,7 @@
 				"source.json meta.structure.dictionary.json"
 			],
 			"settings": {
-				"foreground": "#effc3e"
+				"foreground": "#FF7F7F" // Pink for JSON keys
 			}
 		},
 		{
@@ -345,7 +336,7 @@
 				"source.json meta.structure.dictionary.value.json"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#78FF78" // Green for JSON values
 			}
 		},
 		{
@@ -354,7 +345,7 @@
 				"text.html.basic entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#effc3e"
+				"foreground": "#F78C6C"
 			}
 		}
 	]
