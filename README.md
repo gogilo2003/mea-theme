@@ -1,16 +1,35 @@
-# meatheme README
+# Mea Theme
 
-## Working with Markdown
+![Preview](preview.png)
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+Mea Theme is a beautifully designed Visual Studio Code theme that offers a modern and vibrant look, enhancing your coding experience with carefully chosen colors and a visually pleasing aesthetic. 
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+## Features
 
-## For more information
+- **Dark Mode**: A stylish dark background with a rich indigo color that reduces eye strain.
+- **Syntax Highlighting**: Clear and distinctive syntax highlighting for various languages, making code easier to read.
+- **Customizable Colors**: Tailor your coding environment with adjustable colors for fields, values, and more.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## Installation
+
+### From Visual Studio Code Marketplace
+
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
+3. Search for "Mea Theme" and click "Install."
+
+### From GitHub
+
+To install the theme directly from GitHub, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gogilo2003/mea-theme.git
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **Enjoy!**
+

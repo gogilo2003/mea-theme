@@ -1,10 +1,15 @@
 {
-  "name": "meatheme",
-  "displayName": "meaTheme",
+  "name": "mea-theme",
+  "displayName": "MEA Theme",
   "description": "Mea Theme",
   "version": "0.0.1",
+  "publisher": "gogilo2003",
   "engines": {
     "vscode": "^1.94.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gogilo2003/mea-theme.git"
   },
   "categories": [
     "Themes"
@@ -17,5 +22,10 @@
         "path": "./themes/mea-theme-color-theme.json"
       }
     ]
-  }
+  },
+  "keywords": [
+    "vscode",
+    "theme",
+    "dark"
+  ]
 }
