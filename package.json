@@ -17,7 +17,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "mea-theme",
+        "label": "MEA Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/mea-theme-color-theme.json"
       }
